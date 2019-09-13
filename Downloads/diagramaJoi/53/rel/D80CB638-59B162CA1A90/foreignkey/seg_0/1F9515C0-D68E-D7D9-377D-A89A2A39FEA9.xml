@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1F9515C0-D68E-D7D9-377D-A89A2A39FEA9" containerWithKeyObject="63CF111E-77A5-F4C9-87F9-2E112BE5F85B" localFKIndex="61A6627D-1EC7-CBCF-5B22-5058940865C7" name="almacen_taller_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>0BC08254-C90E-058A-BA70-278129EAE036</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<referredTableLongName>taller</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>110F511A-7EB4-61F9-0580-8F14A0DE9DDA</referredTableID>
+<keyObject>380A3F64-63C8-4F7A-C5A0-460ACABD2B6B</keyObject>
+<referredKeyID>380A3F64-63C8-4F7A-C5A0-460ACABD2B6B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>direccion</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

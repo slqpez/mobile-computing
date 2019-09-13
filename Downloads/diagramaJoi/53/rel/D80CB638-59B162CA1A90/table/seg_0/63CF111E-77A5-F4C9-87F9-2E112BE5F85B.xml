@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63CF111E-77A5-F4C9-87F9-2E112BE5F85B" name="almacen">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pieza_codigo" id="443C2A71-DC67-552E-FD7C-D19867DAA680">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22A0A594-9EC5-BD20-3630-7DF63BAD73DE" referredColumn="AF84AEC2-2238-584F-9C34-AFDE1C80402B"/>
+</associations>
+</Column>
+<Column name="taller_direccion" id="1CD09C61-FD1D-D92B-7827-C3C9EF25E08A">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F9515C0-D68E-D7D9-377D-A89A2A39FEA9" referredColumn="D7273778-3D75-F34C-72CB-90C01E212B9E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11AF4695-8550-E2AB-90FB-D046AE5A4E60" name="almacen_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="443C2A71-DC67-552E-FD7C-D19867DAA680"/>
+<colUsage columnID="1CD09C61-FD1D-D92B-7827-C3C9EF25E08A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63EC16D1-5AF4-1034-F9C2-3B87FC44ECB2" name="almacen_pieza_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>0BC08254-C90E-058A-BA70-278129EAE036</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="443C2A71-DC67-552E-FD7C-D19867DAA680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61A6627D-1EC7-CBCF-5B22-5058940865C7" name="almacen_taller_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>0BC08254-C90E-058A-BA70-278129EAE036</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CD09C61-FD1D-D92B-7827-C3C9EF25E08A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

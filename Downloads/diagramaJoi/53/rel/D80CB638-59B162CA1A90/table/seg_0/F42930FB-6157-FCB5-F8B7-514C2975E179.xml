@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F42930FB-6157-FCB5-F8B7-514C2975E179" name="wfgh">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<generatorID>2880B4FF-B2B2-FB6E-3C17-6708A4A0BDBA</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="gvhj_gvhj_ID" id="F222FA13-6525-1112-8557-78037B392B17">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86F6DF26-AA47-645A-3BCB-9044A53FC9B0" referredColumn="56A31BB9-35C3-4D47-0513-57167AA8D83D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4A1D102-0A1D-5FD8-FCA9-D58AB1D36594" name="wfgh_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F222FA13-6525-1112-8557-78037B392B17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="608EB667-6EA7-A77F-EB4A-060F592173FE" name="wfgh_gvhj_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<generatorID>9335C209-1FB3-4179-ED43-CAF820305C5D</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F222FA13-6525-1112-8557-78037B392B17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

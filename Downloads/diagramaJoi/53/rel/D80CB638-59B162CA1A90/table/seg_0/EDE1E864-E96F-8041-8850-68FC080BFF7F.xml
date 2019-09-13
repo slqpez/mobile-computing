@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDE1E864-E96F-8041-8850-68FC080BFF7F" name="asdf">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:08 UTC</createdTime>
+<generatorID>8A7D60FD-674D-0DE8-F738-658DD7517F0A</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Attribute_1" id="ADF0F62B-7507-590D-FD41-94045E5F2477">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:09 UTC</createdTime>
+<generatorID>70ABB894-9FD6-DB90-EEB6-E362B3373AF1</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EEC43A5D-18F7-8F71-4A43-9BB11DBA6952" name="asdf_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:09 UTC</createdTime>
+<generatorID>258757ED-F44D-58A7-2964-46E5DD1B2F56</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADF0F62B-7507-590D-FD41-94045E5F2477"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

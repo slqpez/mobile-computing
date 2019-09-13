@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="2476B502-B7A0-A409-D8DF-0521D118AC66">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 17:59:45 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

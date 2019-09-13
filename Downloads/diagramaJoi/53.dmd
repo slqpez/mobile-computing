@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="53" id="D1CFE204-6DDB-A8F0-15AF-895FD33D2579" version="3.5">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 17:59:45 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D1CFE204-6DDB-A8F0-15AF-895FD33D2579</designId>
+</OSDM_Design>

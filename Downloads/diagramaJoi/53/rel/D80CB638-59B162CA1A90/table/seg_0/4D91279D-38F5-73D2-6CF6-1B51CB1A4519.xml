@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D91279D-38F5-73D2-6CF6-1B51CB1A4519" name="pieza">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>E83B33E3-F2E6-221B-06F6-A78DF3EA5570</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="AF84AEC2-2238-584F-9C34-AFDE1C80402B">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>FA7AB610-8A23-52FD-25B6-3685634027DC</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6003866-19DA-7941-6BE0-F3C883CADD0A" name="pieza_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>48EABA9E-967E-D8CC-2A58-44D123199445</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF84AEC2-2238-584F-9C34-AFDE1C80402B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

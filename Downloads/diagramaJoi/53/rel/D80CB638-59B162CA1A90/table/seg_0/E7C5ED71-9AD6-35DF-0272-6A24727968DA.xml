@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7C5ED71-9AD6-35DF-0272-6A24727968DA" name="safg">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:09 UTC</createdTime>
+<generatorID>FC37DA34-C831-887B-2707-2AA37A72199A</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="gvhj_ID" id="56A31BB9-35C3-4D47-0513-57167AA8D83D">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="asdf_Attribute_1" id="093E7752-AB79-2F60-8AB2-C1702B925AB3">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:09 UTC</createdTime>
+<generatorID>E2375873-0A6A-5796-B66D-9B9508B5FC48</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDF7C8AD-B25F-5A99-9ABB-C80552E0157C" referredColumn="ADF0F62B-7507-590D-FD41-94045E5F2477"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0EEC4EA3-39FB-8141-113F-CEE949805BD6" name="gvhj_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="56A31BB9-35C3-4D47-0513-57167AA8D83D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A686C67-1F09-C5C9-8DE4-3F103F06F652" name="gvhj_asdf_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 18:02:09 UTC</createdTime>
+<generatorID>5DEDF6A7-F1F0-0005-93FC-F1FF2CDF5133</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="093E7752-AB79-2F60-8AB2-C1702B925AB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

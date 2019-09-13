@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE443D4C-3918-5E12-1109-5EE73260BB61" name="hhg">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<generatorID>E3F93CF6-BA8E-F41C-A238-F8D301A7C222</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="gvhj_gvhj_ID" id="A3B01499-8CF6-A06C-D818-7BB2284FAAA0">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="099A4948-F3B7-EB03-17ED-18FDCC83B8F1" referredColumn="56A31BB9-35C3-4D47-0513-57167AA8D83D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="648DF276-0CD8-A81F-A669-6AF6EBE1DBEF" name="hhg_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A3B01499-8CF6-A06C-D818-7BB2284FAAA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C81D7F7D-2FEB-0E34-29C8-7C326C66EC5A" name="hhg_gvhj_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<generatorID>A237737C-0DE0-D4D0-1585-0DD641707E3C</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3B01499-8CF6-A06C-D818-7BB2284FAAA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

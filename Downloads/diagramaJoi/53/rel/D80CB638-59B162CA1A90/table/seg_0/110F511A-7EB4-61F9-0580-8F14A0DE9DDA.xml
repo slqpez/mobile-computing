@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="110F511A-7EB4-61F9-0580-8F14A0DE9DDA" name="taller">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>D2524FC4-3364-FBB6-2358-62C92BFA46DA</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="direccion" id="D7273778-3D75-F34C-72CB-90C01E212B9E">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>A84EF7AE-DCCA-DB71-E832-E117D61B1022</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="380A3F64-63C8-4F7A-C5A0-460ACABD2B6B" name="taller_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 20:07:00 UTC</createdTime>
+<generatorID>7172E0FE-4828-A00D-DB0E-CB311883B58C</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7273778-3D75-F34C-72CB-90C01E212B9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

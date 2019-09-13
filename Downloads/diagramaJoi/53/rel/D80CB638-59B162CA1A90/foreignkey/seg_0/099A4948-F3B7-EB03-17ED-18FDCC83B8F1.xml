@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="099A4948-F3B7-EB03-17ED-18FDCC83B8F1" containerWithKeyObject="AE443D4C-3918-5E12-1109-5EE73260BB61" localFKIndex="C81D7F7D-2FEB-0E34-29C8-7C326C66EC5A" name="hhg_gvhj_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-11 19:45:03 UTC</createdTime>
+<generatorID>A237737C-0DE0-D4D0-1585-0DD641707E3C</generatorID>
+<ownerDesignName>53</ownerDesignName>
+<referredTableLongName>safg</referredTableLongName>
+<arc>73F6FD87-9568-27B7-977C-7269E8206FAD</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E7C5ED71-9AD6-35DF-0272-6A24727968DA</referredTableID>
+<keyObject>0EEC4EA3-39FB-8141-113F-CEE949805BD6</keyObject>
+<referredKeyID>0EEC4EA3-39FB-8141-113F-CEE949805BD6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>gvhj_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
