@@ -16,8 +16,10 @@ import android.widget.ProgressBar
 import android.widget.Toast
 
 import co.edu.udea.compumovil.gr03_20201.lab1.R
-
-class LoginActivity : AppCompatActivity() {
+import co.edu.udea.compumovil.gr03_20201.lab1.register
+import android.content.Intent as Intent1
+import android.content.Intent
+class LoginActivity : AppCompatActivity(), View.OnClickListener{
 
     private lateinit var loginViewModel: LoginViewModel
 
@@ -29,7 +31,12 @@ class LoginActivity : AppCompatActivity() {
         val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
         val login = findViewById<Button>(R.id.login)
+        val register = findViewById<Button>(R.id.register)
         val loading = findViewById<ProgressBar>(R.id.loading)
+
+
+        login.setOnClickListener(this);
+        register.setOnClickListener(this);
 
         loginViewModel = ViewModelProviders.of(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
@@ -110,6 +117,19 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showLoginFailed(@StringRes errorString: Int) {
         Toast.makeText(applicationContext, errorString, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onClick(v: View?) {
+        if (v != null) {
+            when (v.id){
+                R.id.register -> {
+                    val intent =  Intent(this, register::class.java);
+                    startActivity(intent)
+                }
+
+
+            }
+        }
     }
 }
 
