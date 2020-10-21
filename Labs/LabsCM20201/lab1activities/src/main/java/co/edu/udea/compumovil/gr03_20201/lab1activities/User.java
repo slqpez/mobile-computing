@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.gr03_20201.lab1;
+package co.edu.udea.compumovil.gr03_20201.lab1activities;
 
 public class User {
     int id;
