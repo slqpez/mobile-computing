@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -24,6 +25,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import co.edu.udea.compumovil.gr03_20201.lab1activities.R;
+import co.edu.udea.compumovil.gr03_20201.lab1activities.RegisterActivity;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.LoginViewModel;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.LoginViewModelFactory;
 
@@ -134,5 +136,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void launchSecondActivity(View view) {
         Log.d(LOG_TAG, "Button clicked!");
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 }
