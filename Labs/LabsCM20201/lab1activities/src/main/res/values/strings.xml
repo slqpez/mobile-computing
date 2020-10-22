@@ -11,4 +11,5 @@
     <string name="login_failed">"Login failed"</string>
     <string name="prompt_user">Usuario</string>
     <string name="action_log_in">Ingresar</string>
+    <string name="action_cancel">Cancelar</string>
 </resources>

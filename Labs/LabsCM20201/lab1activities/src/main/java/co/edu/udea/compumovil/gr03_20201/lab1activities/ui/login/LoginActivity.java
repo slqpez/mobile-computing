@@ -114,14 +114,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
-            }
-        });
+
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
@@ -135,8 +128,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void launchSecondActivity(View view) {
-        Log.d(LOG_TAG, "Button clicked!");
-        Intent intent = new Intent(this, RegisterActivity.class);
-        startActivity(intent);
+        switch (view.getId()){
+            case R.id.login:
+                break;
+            case R.id.register:
+                Intent intent = new Intent(this, RegisterActivity.class);
+                startActivity(intent);
+        }
+
     }
 }
