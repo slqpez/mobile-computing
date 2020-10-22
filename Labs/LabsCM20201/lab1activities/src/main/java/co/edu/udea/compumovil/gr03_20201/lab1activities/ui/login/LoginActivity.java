@@ -24,112 +24,51 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import co.edu.udea.compumovil.gr03_20201.lab1activities.DAOUser;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.R;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.RegisterActivity;
-import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.LoginViewModel;
-import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.LoginViewModelFactory;
+import co.edu.udea.compumovil.gr03_20201.lab1activities.SitesActivity;
+import co.edu.udea.compumovil.gr03_20201.lab1activities.User;
+
 
 public class LoginActivity extends AppCompatActivity {
     private static final String LOG_TAG =
             LoginActivity.class.getSimpleName();
+    EditText user, password;
+    Button login;
+    DAOUser dao;
 
-    private LoginViewModel loginViewModel;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
-                .get(LoginViewModel.class);
-
-        final EditText usernameEditText = findViewById(R.id.username);
-        final EditText passwordEditText = findViewById(R.id.password);
-        final Button loginButton = findViewById(R.id.login);
-        final ProgressBar loadingProgressBar = findViewById(R.id.loading);
-
-        loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
-            @Override
-            public void onChanged(@Nullable LoginFormState loginFormState) {
-                if (loginFormState == null) {
-                    return;
-                }
-                loginButton.setEnabled(loginFormState.isDataValid());
-                if (loginFormState.getUsernameError() != null) {
-                    usernameEditText.setError(getString(loginFormState.getUsernameError()));
-                }
-                if (loginFormState.getPasswordError() != null) {
-                    passwordEditText.setError(getString(loginFormState.getPasswordError()));
-                }
-            }
-        });
-
-        loginViewModel.getLoginResult().observe(this, new Observer<LoginResult>() {
-            @Override
-            public void onChanged(@Nullable LoginResult loginResult) {
-                if (loginResult == null) {
-                    return;
-                }
-                loadingProgressBar.setVisibility(View.GONE);
-                if (loginResult.getError() != null) {
-                    showLoginFailed(loginResult.getError());
-                }
-                if (loginResult.getSuccess() != null) {
-                    updateUiWithUser(loginResult.getSuccess());
-                }
-                setResult(Activity.RESULT_OK);
-
-                //Complete and destroy login activity once successful
-                finish();
-            }
-        });
-
-        TextWatcher afterTextChangedListener = new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // ignore
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // ignore
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
-            }
-        };
-        usernameEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.addTextChangedListener(afterTextChangedListener);
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_DONE) {
-                    loginViewModel.login(usernameEditText.getText().toString(),
-                            passwordEditText.getText().toString());
-                }
-                return false;
-            }
-        });
-
-
+        user = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        login = findViewById(R.id.login);
+        dao = new DAOUser(this);
     }
 
-    private void updateUiWithUser(LoggedInUserView model) {
-        String welcome = getString(R.string.welcome) + model.getDisplayName();
-        // TODO : initiate successful logged in experience
-        Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
-    }
 
-    private void showLoginFailed(@StringRes Integer errorString) {
-        Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
-    }
 
     public void launchSecondActivity(View view) {
         switch (view.getId()){
             case R.id.login:
+                String u = user.getText().toString();
+                String p = password.getText().toString();
+                if(u.equals("")|| p.equals("")){
+                    Toast.makeText(this, "Uno o varios campos están vacios.", Toast.LENGTH_SHORT).show();
+                }else if(dao.login(u,p)==1){
+                    User ul = dao.getUser(u,p);
+                    Toast.makeText(this, "Datos correctos.", Toast.LENGTH_SHORT).show();
+                    Intent is = new Intent(this, SitesActivity.class);
+                    is.putExtra("id", ul.getId());
+                    startActivity(is);
+                    finish();
+                }else{
+                    Toast.makeText(this, "Usuario o contraseña incorrectos.", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.register:
                 Intent intent = new Intent(this, RegisterActivity.class);

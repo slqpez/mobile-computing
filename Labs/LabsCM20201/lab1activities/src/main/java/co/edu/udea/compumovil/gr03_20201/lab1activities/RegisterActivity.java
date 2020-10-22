@@ -34,6 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(this, "Los campos están vacios.", Toast.LENGTH_SHORT).show();
                 }else if(dao.insertUser(u)){
                     Toast.makeText(this, "Registro exitoso.", Toast.LENGTH_SHORT).show();
+                    Intent ir = new Intent(this, LoginActivity.class);
+                    startActivity(ir);
                 }else{
                     Toast.makeText(this, "El usuario ya estaba registrado, o no se pudo registrar.", Toast.LENGTH_SHORT).show();
                 }

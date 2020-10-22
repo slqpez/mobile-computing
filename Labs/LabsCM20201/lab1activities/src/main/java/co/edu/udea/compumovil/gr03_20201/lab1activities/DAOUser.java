@@ -12,50 +12,84 @@ public class DAOUser {
     User u;
     ArrayList<User> lista;
     SQLiteDatabase sql;
-    String bd="BDUsers";
-    String table ="create table users(id integer primary key autoincrement, user text, password text)";
+    String bd = "BDUsers";
+    String table = "create table if not exists users(id integer primary key autoincrement, user text, password text)";
 
-    public DAOUser(Context c){
-        this.c=c;
-        sql = c.openOrCreateDatabase(bd, c.MODE_PRIVATE,null);
+    public DAOUser(Context c) {
+        this.c = c;
+        sql = c.openOrCreateDatabase(bd, c.MODE_PRIVATE, null);
         sql.execSQL(table);
         u = new User();
     }
 
-    public boolean insertUser(User u){
-        if(search(u.getUser())==0){
+    public boolean insertUser(User u) {
+        if (search(u.getUser()) == 0) {
             ContentValues cv = new ContentValues();
             cv.put("user", u.getUser());
             cv.put("password", u.getPassword());
-            return(sql.insert("users",null, cv)>0);
-        }else{
-            return  false;
+            return (sql.insert("users", null, cv) > 0);
+        } else {
+            return false;
         }
     }
 
-    public int search(String u){
-        int x=0;
+    public int search(String u) {
+        int x = 0;
         lista = selectUsers();
-        for(User us:lista){
-            if(us.getUser().equals(u)){
+        for (User us : lista) {
+            if (us.getUser().equals(u)) {
                 x++;
             }
         }
-        return  x;
+        return x;
     }
-    public ArrayList<User> selectUsers(){
+
+    public ArrayList<User> selectUsers() {
         ArrayList<User> lista = new ArrayList<User>();
         lista.clear();
-        Cursor cr = sql.rawQuery("select * from users",null);
-        if(cr!= null && cr.moveToFirst()){
-            do{
+        Cursor cr = sql.rawQuery("select * from users", null);
+        if (cr != null && cr.moveToFirst()) {
+            do {
                 User u = new User();
                 u.setId(cr.getInt(0));
                 u.setUser(cr.getString(1));
                 u.setPassword(cr.getString(2));
                 lista.add(u);
-            }while(cr.moveToNext());
+            } while (cr.moveToNext());
         }
         return lista;
+    }
+
+    public int login(String u, String p) {
+        int a = 0;
+        Cursor cr = sql.rawQuery("select * from users", null);
+        if (cr != null && cr.moveToFirst()) {
+            do {
+                if (cr.getString(1).equals(u) && cr.getString(2).equals(p)) {
+                    a++;
+                }
+            } while (cr.moveToNext());
+        }
+        return a;
+    }
+
+    public  User getUser(String u, String p){
+        lista = selectUsers();
+        for (User us:lista) {
+            if(us.getUser().equals(u)&& us.getPassword().equals(p)){
+                return us;
+            }
+        }
+        return  null;
+    }
+
+    public  User getUserById(int i){
+        lista = selectUsers();
+        for (User us:lista) {
+            if(us.getId() == i){
+                return us;
+            }
+        }
+        return  null;
     }
 }
