@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C122B498-4F33-166B-8922-EF9BBE32E55C" name="MANTENIMIENTO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>4642C528-5597-121F-C80D-BE26AD72C0CA</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_mantenimiento" id="309BDAF5-F63D-2A72-73A1-435FDCEEC391">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>B712C051-4332-81C8-50E7-7DE8F209046B</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C5726F4-6A4E-8C79-D42E-A3F4C5886DD3" name="MANTENIMIENTO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>2796E2A3-929F-4B7E-5258-94C8491A5BBB</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="309BDAF5-F63D-2A72-73A1-435FDCEEC391"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1338D03D-D883-B0F3-142C-FD376AD69A88" name="MANTENIMIENTO_SERVICIO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>FACE84F9-F25F-0C84-290A-0C91BF6F2B39</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

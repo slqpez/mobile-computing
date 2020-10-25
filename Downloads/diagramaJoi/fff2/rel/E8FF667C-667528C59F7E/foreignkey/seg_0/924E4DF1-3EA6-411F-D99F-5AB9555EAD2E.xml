@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="924E4DF1-3EA6-411F-D99F-5AB9555EAD2E" containerWithKeyObject="E56194F4-9BAE-B51C-4E55-A1A37C439EB9" localFKIndex="78F3EC6C-9A4C-FC5F-7667-3BCA472BEAF7" name="TRASLADO_SEDE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>8AB0EF9D-BEF0-C643-FFD6-CC5AE2CE00D2</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<referredTableLongName>SEDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2CAA530A-8E62-3EA2-CDF9-41945105318A</referredTableID>
+<keyObject>0B060214-E675-5C48-D20C-529EDB085E45</keyObject>
+<referredKeyID>0B060214-E675-5C48-D20C-529EDB085E45</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo_taller</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

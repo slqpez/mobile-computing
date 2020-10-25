@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="211DD8A0-8C78-DEDC-C93D-6D4AF58BF85D" containerWithKeyObject="A6060F56-17CE-AEEA-FCFA-518A0E4782F5" localFKIndex="A754D685-4834-6E2E-4EBE-3265F9AEE742" name="PIEZA_TALLER_SEDE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>18A6ABD1-A56F-6145-CB06-BC4A7C6FB9B1</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<referredTableLongName>SEDE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2CAA530A-8E62-3EA2-CDF9-41945105318A</referredTableID>
+<keyObject>0B060214-E675-5C48-D20C-529EDB085E45</keyObject>
+<referredKeyID>0B060214-E675-5C48-D20C-529EDB085E45</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo_taller</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

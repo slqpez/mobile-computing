@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14D5EC06-8A30-6F52-8BC0-4350B148C8DE" name="CLIENTE">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>C67BA339-B6A3-2BB0-3F96-C1087C472B4B</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="identificador" id="732B1B61-6C11-9458-855C-234F44F2ECC6">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>2607133D-7B0B-3C22-A8F9-060ADEE0323B</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1042AA69-5E93-C54A-8D8B-4157E4B935A7">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>84F713DF-C4B0-AD81-6C0E-91D515EC9426</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="935EA82C-807D-1D12-E54D-AF20C25889B7">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>F8464C87-F83B-D548-770B-290F9D84CAA5</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="1167E503-4895-CE84-639D-AC25353C504C">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>6049126C-E9A2-AE4D-1CD6-EC54F9ED912C</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="1B1530AF-4CC4-6C59-3A8C-D13C560C4013">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>2DCBCB1A-7CB4-74E3-495C-739037B100BD</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBE1CCB2-94F5-01FA-0D5B-0C63C3304F45" name="CLIENTE_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>D9AB9A5C-C5FF-4875-350A-F5E590DA9960</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="732B1B61-6C11-9458-855C-234F44F2ECC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

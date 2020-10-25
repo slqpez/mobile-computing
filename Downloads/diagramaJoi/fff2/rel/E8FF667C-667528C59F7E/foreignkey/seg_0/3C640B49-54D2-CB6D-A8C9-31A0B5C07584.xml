@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3C640B49-54D2-CB6D-A8C9-31A0B5C07584" containerWithKeyObject="A6060F56-17CE-AEEA-FCFA-518A0E4782F5" localFKIndex="5721CF59-AEC8-6C6E-621C-23FA5AB8DAC9" name="PIEZA_TALLER_PIEZA_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>0C1AA60E-B604-BF24-05C5-5F4D53794A58</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<referredTableLongName>PIEZA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>20BA29F3-5364-0C0B-A352-3B11857DE666</referredTableID>
+<keyObject>906C545E-195B-2B8F-CADC-6C910AC4599D</keyObject>
+<referredKeyID>906C545E-195B-2B8F-CADC-6C910AC4599D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PIEZA_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99B6BD6E-98CE-8812-39F9-30C6EA5E574E" name="MOTO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>84EAF4A1-4B97-9350-406A-BBDEC8D255A1</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="licencia" id="BB8ECD4E-05E8-8621-D8D8-B2CDC31DA5D7">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>C240BF58-0B5F-3DDA-BCE2-B139E5912E23</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="placa" id="65D0B0DB-B864-0881-A1A9-FB0D37B20FF1">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>D9922415-0422-BE55-00D3-2831109A46FB</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca" id="B61F922C-A18B-2045-F8B8-F070068CC5A4">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>AC576E0E-9EE9-AF54-EFAC-3832A7C6EE48</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo" id="1977FD46-C35D-86A2-74B5-0FC2945B34E9">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>A110A894-0A66-07D4-75A1-6489B7B6FF1D</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="C8FBDB84-5130-5B21-B406-B6505CC378E9">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>856C9C18-91E1-0290-88D2-70EAAA7B2056</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kilometrage" id="7CCD431D-AD13-D676-4934-D19503826438">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>37AEDC8A-ADF6-92D5-0FC3-2D8A3856540D</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_identificador" id="AAEB4E43-FCB0-0087-6754-CAD057F9BB93">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>5772F59E-3FA1-AA72-85B3-D33D44B7BB34</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE95E632-B4B2-3515-CE66-E028E8E166F2" referredColumn="732B1B61-6C11-9458-855C-234F44F2ECC6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="011FDFA1-5021-8C19-6AA7-596E8B741B81" name="MOTO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>8CD52BB2-F850-DC6C-ADF7-FE5E1613734D</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB8ECD4E-05E8-8621-D8D8-B2CDC31DA5D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C7FA47C-E566-0F6F-75AA-6F1F8E406A75" name="MOTO_CLIENTE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>3924B8B7-64FE-D86B-B2FC-56201DC9D7FB</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAEB4E43-FCB0-0087-6754-CAD057F9BB93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

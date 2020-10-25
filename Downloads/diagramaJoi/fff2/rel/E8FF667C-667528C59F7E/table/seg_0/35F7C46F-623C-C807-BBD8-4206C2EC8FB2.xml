@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="35F7C46F-623C-C807-BBD8-4206C2EC8FB2" name="MECANICO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>7C190E19-68CB-5762-6409-066FA4236945</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cedula" id="BC7DE3D8-3BF8-CE1F-5C25-9AB47171456E">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>569A0B54-BF1B-4076-7E36-462FE7E95002</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5BD4C3AC-2366-5D59-E27F-6BB64E7B6BE9" referredColumn="E5076AC4-2D15-8F41-5FBE-9522A6918FF8"/>
+</associations>
+</Column>
+<Column name="MANTENIMIENTO_cod_mantenimiento" id="DB8EE762-CB6E-ABD0-8781-5D999C00CF0F">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>4E2FD369-87DD-2537-B59D-5418FA74C850</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE2FB25B-F9DF-E264-378B-8407C7CEBE22" referredColumn="309BDAF5-F63D-2A72-73A1-435FDCEEC391"/>
+</associations>
+</Column>
+<Column name="REPARACION_cod_reparacion" id="4222A026-7C63-762F-B0ED-8FD0934EFC31">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>6C0E8703-976C-AF70-7BB2-CEC7E530FB0A</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7889C6B5-F3ED-83FD-B6C6-F28C38DF29A3" referredColumn="CFD09CDA-0A70-6C37-7B55-69DD25D20F9B"/>
+</associations>
+</Column>
+<Column name="DIAGNOSTICO_DIAGNOSTICO_ID" id="28241817-91A9-CC4C-87C7-9165D58DFEB4">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46FF6E55-6F64-B23F-552D-0BD9C6D09E0B" referredColumn="EE2268C3-55BD-5F99-C952-7131882B06CC"/>
+</associations>
+</Column>
+<Column name="SISTEMA_SISTEMA_ID" id="C6EF8A41-7007-DA3E-7E1A-3C1A83F0F421">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69A7C810-B2B9-351F-1E63-4082DBCCC366" referredColumn="03AFE218-5513-2E0A-2C98-66409461C665"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BBF3530-A890-A103-941A-7A315D8415E6" name="MECANICO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>4CF4DCDC-CB06-6D3E-D29F-D29DEB6A7DE4</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC7DE3D8-3BF8-CE1F-5C25-9AB47171456E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDAB294A-A284-3C6E-46CA-085DDD5847B4" name="MECANICO_EMPLEADO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>06A07CE4-8361-4307-52E6-51A5E18B7011</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC7DE3D8-3BF8-CE1F-5C25-9AB47171456E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F002DA26-6EBE-E814-8848-9B3D9541EA04" name="MECANICO_REPARACION_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>10CB761D-F6E6-D37B-B0F0-A16CAF0FF806</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4222A026-7C63-762F-B0ED-8FD0934EFC31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="635D1DEC-B4F9-BC03-1640-431CB8C8159C" name="MECANICO_DIAGNOSTICO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>C2F6E63E-3198-4BA9-13CD-4F8D8F59C1C5</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28241817-91A9-CC4C-87C7-9165D58DFEB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D85C7C8-5643-C401-769F-6CBEE4176908" name="MECANICO_SISTEMA_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>48068DB9-7614-A320-E879-E284F71999D1</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6EF8A41-7007-DA3E-7E1A-3C1A83F0F421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CF4AC17-94D5-7052-08E5-51DFE6244660" name="MECANICO_MANTENIMIENTO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>B74AFC83-7FB0-9170-6950-B9717A1BB1EC</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB8EE762-CB6E-ABD0-8781-5D999C00CF0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

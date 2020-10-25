@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E56194F4-9BAE-B51C-4E55-A1A37C439EB9" name="TRASLADO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>F0087603-2B81-1A85-76C4-9D38282E7B87</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEDE_codigo_taller" id="92E5E680-E810-7B1C-56D2-3AED0277A9D0">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>A64C968C-A3B5-F509-682C-65AD54B8BB44</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="924E4DF1-3EA6-411F-D99F-5AB9555EAD2E" referredColumn="7FA06F74-3264-9270-3589-E936624C8206"/>
+</associations>
+</Column>
+<Column name="PIEZA_DIAGNOSTICO_PIEZA_DIAGNOSTICO_ID" id="E2C67891-10B9-BB9E-F4F7-F3D7C4AE01BE">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB992778-2BB8-8E95-44B1-245E9B514A66" referredColumn="C4CD2F1C-EBBC-0376-E249-7B355ABBF089"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE49DF55-73E2-14F2-E4F0-A4F7FEC3BA0F" name="TRASLADO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>F0FBF487-EECE-907C-D636-1697FBFA0F79</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92E5E680-E810-7B1C-56D2-3AED0277A9D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="657A3C97-2064-59DA-7AC7-B4BBFD2DEF66" name="TRASLADO_SECRETARIO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>0F84B2C4-DA00-C12D-4005-981CE5C101E3</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="6093E0F2-A257-599D-ECE1-3AB2AF241549" name="TRASLADO_PIEZA_DIAGNOSTICO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>65856329-A008-A806-CD1C-E4664D24A076</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2C67891-10B9-BB9E-F4F7-F3D7C4AE01BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78F3EC6C-9A4C-FC5F-7667-3BCA472BEAF7" name="TRASLADO_SEDE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>8AB0EF9D-BEF0-C643-FFD6-CC5AE2CE00D2</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92E5E680-E810-7B1C-56D2-3AED0277A9D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

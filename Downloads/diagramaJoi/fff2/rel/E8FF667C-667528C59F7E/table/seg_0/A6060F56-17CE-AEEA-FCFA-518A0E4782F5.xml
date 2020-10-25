@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6060F56-17CE-AEEA-FCFA-518A0E4782F5" name="PIEZA_TALLER">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>430E91DE-FCEE-D953-49EB-9D1818CAECCC</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEDE_codigo_taller" id="46B388C6-1586-5C54-B613-0F59FA4AFC42">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>5FC1373F-58C1-429B-D641-D3547C46D6BA</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="211DD8A0-8C78-DEDC-C93D-6D4AF58BF85D" referredColumn="7FA06F74-3264-9270-3589-E936624C8206"/>
+</associations>
+</Column>
+<Column name="PIEZA_PIEZA_ID" id="F3D791D8-2B49-4B72-FA04-1C81CB625470">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C640B49-54D2-CB6D-A8C9-31A0B5C07584" referredColumn="73253FFC-AC65-0430-14A3-7FF7293A11A0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="367C679D-0A07-0BD9-6792-DB0694B3DA7D" name="PIEZA_TALLER_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>0940E23D-A1CC-C93D-8B32-AD7CED6DA013</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B388C6-1586-5C54-B613-0F59FA4AFC42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5721CF59-AEC8-6C6E-621C-23FA5AB8DAC9" name="PIEZA_TALLER_PIEZA_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>0C1AA60E-B604-BF24-05C5-5F4D53794A58</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3D791D8-2B49-4B72-FA04-1C81CB625470"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A754D685-4834-6E2E-4EBE-3265F9AEE742" name="PIEZA_TALLER_SEDE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>18A6ABD1-A56F-6145-CB06-BC4A7C6FB9B1</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46B388C6-1586-5C54-B613-0F59FA4AFC42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

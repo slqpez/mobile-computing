@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1FFF645-3B71-B273-BD5E-5B54188AEB80" name="DOCUMENTO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>9213608E-E214-8DCA-10DC-48B56DCEE45F</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENTE_identificador" id="82C91B76-465A-A21B-6240-D26FBAF895FC">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>65AD179F-FB62-691C-4E12-11DD286999CE</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B205BE7F-35E7-94B6-E7EC-AD636A4D3054" referredColumn="732B1B61-6C11-9458-855C-234F44F2ECC6"/>
+</associations>
+</Column>
+<Column name="tipo_documento" id="ED2000A6-0369-A804-4B06-510349874725">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>CA35711F-217B-8F7E-F461-FCA44AA95A16</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_documento" id="A8B52812-2774-3053-1B67-2C5BB805F880">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>5523E68D-5053-A89B-3235-DEA4B227C0AB</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="303406EB-B968-3E4C-5D10-61C8A401D3DA" name="DOCUMENTO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>A256BE39-29CD-8D22-35F9-97B786855274</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82C91B76-465A-A21B-6240-D26FBAF895FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="583C4348-CD2F-8F33-B5DF-E27257832A2B" name="DOCUMENTO_CLIENTE_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>4BEE9D19-EB18-7352-36D8-75816E1CD506</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82C91B76-465A-A21B-6240-D26FBAF895FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50BA0748-827D-16C0-ED83-DED0689B7535" name="REPARACION">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>61B907DB-9C23-BAAE-BB24-B1D12022CD8D</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_reparacion" id="CFD09CDA-0A70-6C37-7B55-69DD25D20F9B">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>2DDF8E00-29E5-D630-87A9-92C738DF5429</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAGNOSTICO_DIAGNOSTICO_ID" id="5FD60F9F-4C9C-7195-8B3E-B0DD6DD6F7BF">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DCCB2BB-2683-A3D0-57A6-A00CC40A82B5" referredColumn="EE2268C3-55BD-5F99-C952-7131882B06CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="177447D0-0E35-B25B-99A2-6E1ED1A17C71" name="REPARACION_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>B81D9C7C-AA3C-6C19-E00C-0B91CAE11814</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD09CDA-0A70-6C37-7B55-69DD25D20F9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F34FED0-DE91-D218-6376-DE42020119D8" name="REPARACION_DIAGNOSTICO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>52CD0A7C-84AE-1247-EA92-EE0F58CCD658</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FD60F9F-4C9C-7195-8B3E-B0DD6DD6F7BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

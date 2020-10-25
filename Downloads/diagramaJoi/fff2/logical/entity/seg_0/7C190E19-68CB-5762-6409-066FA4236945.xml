@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7C190E19-68CB-5762-6409-066FA4236945" name="MECANICO">
+<createdBy>Manuel</createdBy>
+<createdTime>2019-09-12 21:26:46 UTC</createdTime>
+<ownerDesignName>fff2</ownerDesignName>
+<engineerTo>
+<item key="E8FF667C-ABB3-309E-95B3-667528C59F7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>D15ADFBA-01FD-7535-AA03-C6DC553F5048</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_mantenimiento1" id="4E2FD369-87DD-2537-B59D-5418FA74C850">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 18:34:15 UTC</createdTime>
+<generatorID>B74AFC83-7FB0-9170-6950-B9717A1BB1EC</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<engineerTo>
+<item key="E8FF667C-ABB3-309E-95B3-667528C59F7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B712C051-4332-81C8-50E7-7DE8F209046B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_reparacion" id="6C0E8703-976C-AF70-7BB2-CEC7E530FB0A">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 18:37:20 UTC</createdTime>
+<generatorID>10CB761D-F6E6-D37B-B0F0-A16CAF0FF806</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<engineerTo>
+<item key="E8FF667C-ABB3-309E-95B3-667528C59F7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2DDF8E00-29E5-D630-87A9-92C738DF5429</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

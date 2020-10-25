@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7A9741E-1ABA-61A6-C58B-BB44CEE354C3" name="SECRETARIO">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>7ECAE275-4E73-EBB6-16A2-417FCE700C36</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cedula" id="F6A65533-88E9-9B5B-79EE-32CBB10546A1">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>569A0B54-BF1B-4076-7E36-462FE7E95002</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89A4D243-8529-CA37-3B72-ECB00AB8B6A9" referredColumn="E5076AC4-2D15-8F41-5FBE-9522A6918FF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2647D043-F0D6-5D0D-C633-A957F7C0CE97" name="SECRETARIO_PK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>4CF4DCDC-CB06-6D3E-D29F-D29DEB6A7DE4</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6A65533-88E9-9B5B-79EE-32CBB10546A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3881A6E6-B760-72F4-F9E6-CF005BB03A7F" name="SECRETARIO_EMPLEADO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>59CCF03B-EC8D-728A-34C4-A2CF1F378BA2</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6A65533-88E9-9B5B-79EE-32CBB10546A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

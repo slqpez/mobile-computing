@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D51B15C2-99B0-F456-84BC-55FC89F0076E" containerWithKeyObject="80A5278F-72D0-08EE-3ECC-387C56AEFFA8" localFKIndex="86093886-69DE-1ACA-8BC7-FD1DCB89BF80" name="SERVICIO_MOTO_FK">
+<createdBy>Joiner</createdBy>
+<createdTime>2019-09-13 19:02:58 UTC</createdTime>
+<generatorID>EEC872A2-E5B5-2934-2DA4-569429F87EF6</generatorID>
+<ownerDesignName>fff2</ownerDesignName>
+<referredTableLongName>MOTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>99B6BD6E-98CE-8812-39F9-30C6EA5E574E</referredTableID>
+<keyObject>011FDFA1-5021-8C19-6AA7-596E8B741B81</keyObject>
+<referredKeyID>011FDFA1-5021-8C19-6AA7-596E8B741B81</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>licencia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
