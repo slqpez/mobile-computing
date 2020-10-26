@@ -14,11 +14,13 @@ public class DAOUser {
     SQLiteDatabase sql;
     String bd = "BDUsers";
     String table = "create table if not exists users(id integer primary key autoincrement, user text, password text)";
+    String tableS = "create table if not exists sites(id_site integer primary key autoincrement, id_user integer, photo text, name text, info text,punt varchar, location text, tempe text, sitesR text, FOREIGN KEY(id_user) REFERENCES users(id))";
 
     public DAOUser(Context c) {
         this.c = c;
         sql = c.openOrCreateDatabase(bd, c.MODE_PRIVATE, null);
         sql.execSQL(table);
+        sql.execSQL(tableS);
         u = new User();
     }
 
@@ -31,6 +33,13 @@ public class DAOUser {
         } else {
             return false;
         }
+    }
+
+    public boolean insertSite(Sites s) {
+            ContentValues cv = new ContentValues();
+            cv.put("name", s.getName());
+            cv.put("location", s.getLocation());
+            return (sql.insert("sites", null, cv) > 0);
     }
 
     public int search(String u) {
@@ -59,6 +68,28 @@ public class DAOUser {
         }
         return lista;
     }
+    public ArrayList<Sites> selectSites() {
+        ArrayList<Sites> lista = new ArrayList<Sites>();
+        lista.clear();
+        Cursor cr = sql.rawQuery("select * from sites", null);
+        if (cr != null && cr.moveToFirst()) {
+            do {
+                Sites s = new Sites();
+                s.setId(cr.getInt(0));
+                s.setPhoto(cr.getString(1));
+                s.setName(cr.getString(2));
+                s.setInfo(cr.getString(3));
+                s.setPunt(cr.getInt(4));
+                s.setLocation(cr.getString(5));
+                s.setTempe(cr.getString(6));
+                s.setSitesR(cr.getString(7));
+                lista.add(s);
+            } while (cr.moveToNext());
+        }
+        return lista;
+    }
+
+
 
     public int login(String u, String p) {
         int a = 0;
