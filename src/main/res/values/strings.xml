@@ -13,4 +13,8 @@
     <string name="action_cancel">Cancelar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="messages_header">messages_header</string>
+    <string name="signature_title">signature_title</string>
+    <string name="reply_title">reply_title</string>
+    <string name="sync_header">sync_header</string>
 </resources>

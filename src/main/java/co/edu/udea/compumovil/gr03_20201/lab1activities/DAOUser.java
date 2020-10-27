@@ -25,6 +25,11 @@ public class DAOUser {
         sql = c.openOrCreateDatabase(bd, c.MODE_PRIVATE, null);
         sql.execSQL(table);
         sql.execSQL(tableS);
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 1,2,'torre','Torre paris', 'Torre que está en paris', 'Francia', 'Francia', 'Paris, Francia','24 grados', 'restaurante' where not exists(select 1 from sites where id_site =1)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 2,2,'santacapilla','Capilla', 'Capilla para rezar', 'Medellín', 'Francia', 'Paris, Francia','30 grados', 'comedor' where not exists(select 2 from sites where id_site =2)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 3,2,'museo','Museo', 'Museo para ver cositas', 'Francia', 'Francia', 'Paris, Francia','20 grados', 'cine' where not exists(select 3 from sites where id_site =3)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 4,2,'notredame','Iglesia', 'Iglesia que se quemó', 'Francia', 'Francia', 'Paris, Francia','12 grados', 'teatro' where not exists(select 4 from sites where id_site =4)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 5,2,'opera','Opera', 'Opera', 'Francia', 'Francia', 'Paris, Francia','16 grados', 'estadio' where not exists(select 4 from sites where id_site =5)");
         u = new User();
     }
 

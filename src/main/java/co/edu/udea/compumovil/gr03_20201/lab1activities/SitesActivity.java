@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr03_20201.lab1activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +17,7 @@ import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.Adaptador;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.Sitio;
 
 public class SitesActivity extends AppCompatActivity {
-
+    Button crear;
     DAOUser dao;
     Sitio s;
     Adaptador adapter;
@@ -26,6 +27,17 @@ public class SitesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sites);
+        crear = findViewById(R.id.crear);
+        crear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(SitesActivity.this, SettingsActivity.class);
+                startActivity(in);
+                Toast.makeText(SitesActivity.this, "Enviando a configuraciones", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
 
         dao = new DAOUser(SitesActivity.this);
         lista = dao.verTodos();
@@ -82,5 +94,9 @@ public class SitesActivity extends AppCompatActivity {
                 });
             }
         });
+    }
+    @Override
+    public void onBackPressed() {
+
     }
 }

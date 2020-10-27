@@ -34,28 +34,30 @@
                     android:id="@+id/nombreitem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="30dp"
                     android:text="nombre"
-                    android:textAppearance="?attr/textAppearanceHeadline6" />
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/descitem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textSize="30dp"
                     android:text="Descripción"
-                    android:textAppearance="?attr/textAppearanceBody2" />
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/puntitem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:textSize="30dp"
                     android:text="Puntuacion"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="?android:attr/textColorSecondary" />
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="30dp" />
 
             </LinearLayout>
 
@@ -72,7 +74,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:text="Editar" />
+                    android:backgroundTint="@color/design_default_color_secondary"
+                    android:text="Editar"
+                    android:textColor="@color/cardview_light_background" />
 
                 <Button
                     android:id="@+id/eliminar"
@@ -80,7 +84,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:text="Eliminar" />
+                    android:text="Eliminar"
+                    android:textColor="@color/cardview_light_background" />
 
                 <Button
                     android:id="@+id/vermas"
@@ -88,7 +93,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:text="Ver mas" />
+                    android:text="Ver mas"
+                    android:textColor="@color/cardview_light_background" />
             </LinearLayout>
 
 </LinearLayout>
