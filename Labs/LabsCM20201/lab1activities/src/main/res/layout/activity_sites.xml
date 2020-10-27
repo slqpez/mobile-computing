@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    tools:context=".SitesActivity">
+
+    <Button
+        android:id="@+id/btn_insertar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+
+
+        android:background="@mipmap/descargar" />
+
+    <ListView
+        android:id="@+id/Sitios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.13"></ListView>
 
     <Button
         android:id="@+id/crear"
         android:layout_width="83dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="264dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="107dp"
         android:background="@android:drawable/ic_menu_preferences"
-        android:backgroundTint="@color/design_default_color_on_secondary" />
+        android:backgroundTint="@color/design_default_color_error" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="547dp"
-        android:text="Button" />
-
-</RelativeLayout>
+</LinearLayout>

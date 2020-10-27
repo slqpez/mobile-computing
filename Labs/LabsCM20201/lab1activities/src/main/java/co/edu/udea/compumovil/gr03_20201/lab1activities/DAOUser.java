@@ -7,20 +7,29 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.util.ArrayList;
 
+import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.Sitio;
+
 public class DAOUser {
     Context c;
     User u;
-    ArrayList<User> lista;
+    Sitio s;
+    ArrayList<User> lista = new ArrayList<User>();
+    ArrayList<Sitio> listaSitios = new ArrayList<Sitio>();
     SQLiteDatabase sql;
     String bd = "BDUsers";
     String table = "create table if not exists users(id integer primary key autoincrement, user text, password text)";
-    String tableS = "create table if not exists sites(id_site integer primary key autoincrement, id_user integer, photo text, name text, info text,punt varchar, location text, tempe text, sitesR text, FOREIGN KEY(id_user) REFERENCES users(id))";
+    String tableS = "create table if not exists sites(id_site integer primary key autoincrement, id_user integer, photo text, name text, info text, description text, punt text, location text, tempe text, sitesR text, FOREIGN KEY(id_user) REFERENCES users(id))";
 
     public DAOUser(Context c) {
         this.c = c;
         sql = c.openOrCreateDatabase(bd, c.MODE_PRIVATE, null);
         sql.execSQL(table);
         sql.execSQL(tableS);
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 1,2,'torre','Torre paris', 'Torre que está en paris', 'Francia', 'Francia', 'Paris, Francia','24 grados', 'restaurante' where not exists(select 1 from sites where id_site =1)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 2,2,'santacapilla','Capilla', 'Capilla para rezar', 'Medellín', 'Francia', 'Paris, Francia','30 grados', 'comedor' where not exists(select 2 from sites where id_site =2)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 3,2,'museo','Museo', 'Museo para ver cositas', 'Francia', 'Francia', 'Paris, Francia','20 grados', 'cine' where not exists(select 3 from sites where id_site =3)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 4,2,'notredame','Iglesia', 'Iglesia que se quemó', 'Francia', 'Francia', 'Paris, Francia','12 grados', 'teatro' where not exists(select 4 from sites where id_site =4)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 5,2,'opera','Opera', 'Opera', 'Francia', 'Francia', 'Paris, Francia','16 grados', 'estadio' where not exists(select 4 from sites where id_site =5)");
         u = new User();
     }
 
@@ -35,11 +44,30 @@ public class DAOUser {
         }
     }
 
-    public boolean insertSite(Sites s) {
-            ContentValues cv = new ContentValues();
-            cv.put("name", s.getName());
-            cv.put("location", s.getLocation());
-            return (sql.insert("sites", null, cv) > 0);
+    public boolean insertSite(Sitio s) {
+        ContentValues cv = new ContentValues();
+        cv.put("photo", s.getFoto());
+        cv.put("name", s.getNombre());
+        cv.put("description", s.getDescripcion());
+        cv.put("punt", s.getPuntuacion());
+        cv.put("info", s.getInformacion());
+        cv.put("location", s.getUbicacion());
+        cv.put("tempe", s.getTemperatura());
+        cv.put("sitesR", s.getRecomendados());
+        return (sql.insert("sites", null, cv) > 0);
+    }
+
+    public boolean editar(Sitio s) {
+        ContentValues cv = new ContentValues();
+        cv.put("photo", s.getFoto());
+        cv.put("name", s.getNombre());
+        cv.put("description", s.getDescripcion());
+        cv.put("punt", s.getPuntuacion());
+        cv.put("info", s.getInformacion());
+        cv.put("location", s.getUbicacion());
+        cv.put("tempe", s.getTemperatura());
+        cv.put("sitesR", s.getRecomendados());
+        return (sql.update("sites", cv, "id_site="+s.getId(), null) > 0);
     }
 
     public int search(String u) {
@@ -68,28 +96,49 @@ public class DAOUser {
         }
         return lista;
     }
-    public ArrayList<Sites> selectSites() {
-        ArrayList<Sites> lista = new ArrayList<Sites>();
+
+    public ArrayList<Sitio> selectSites() {
+        ArrayList<Sitio> lista = new ArrayList<Sitio>();
         lista.clear();
         Cursor cr = sql.rawQuery("select * from sites", null);
         if (cr != null && cr.moveToFirst()) {
             do {
-                Sites s = new Sites();
+                Sitio s = new Sitio();
                 s.setId(cr.getInt(0));
-                s.setPhoto(cr.getString(1));
-                s.setName(cr.getString(2));
-                s.setInfo(cr.getString(3));
-                s.setPunt(cr.getInt(4));
-                s.setLocation(cr.getString(5));
-                s.setTempe(cr.getString(6));
-                s.setSitesR(cr.getString(7));
+                s.setFoto(cr.getString(1));
+                s.setNombre(cr.getString(2));
+                s.setInformacion(cr.getString(3));
+                s.setDescripcion(cr.getString(4));
+                s.setPuntuacion(cr.getString(5));
+                s.setUbicacion(cr.getString(6));
+                s.setTemperatura(cr.getString(7));
+                s.setRecomendados(cr.getString(8));
                 lista.add(s);
             } while (cr.moveToNext());
         }
         return lista;
     }
 
-
+    public ArrayList<Sitio> verTodos(){
+        listaSitios.clear();
+        Cursor cursor=sql.rawQuery("select * from sites", null);
+        if(cursor != null && cursor.getCount() >0) {
+            cursor.moveToFirst();
+            do{
+                listaSitios.add(new Sitio(cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2),
+                        cursor.getString(3),
+                        cursor.getString(4),
+                        cursor.getString(5),
+                        cursor.getString(6),
+                        cursor.getString(7),
+                        cursor.getString(8),
+                        cursor.getString(9)));
+            }while (cursor.moveToNext());
+        }
+        return listaSitios;
+    }
 
     public int login(String u, String p) {
         int a = 0;
@@ -122,5 +171,25 @@ public class DAOUser {
             }
         }
         return  null;
+    }
+
+    public Sitio verUno(int pos){
+        Cursor cr = sql.rawQuery("select * from sites", null);
+        cr.moveToPosition(pos);
+        s = new Sitio(cr.getInt(0),
+                cr.getString(1),
+                cr.getString(2),
+                cr.getString(3),
+                cr.getString(4),
+                cr.getString(5),
+                cr.getString(6),
+                cr.getString(7),
+                cr.getString(8),
+                cr.getString(9));
+        return s;
+    }
+
+    public Boolean eliminar(int id){
+        return (sql.delete("sites", "id_site="+id,null)>0);
     }
 }
