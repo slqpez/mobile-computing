@@ -29,7 +29,7 @@ public class DAOUser {
         sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 2,2,'santacapilla','Capilla', 'Capilla para rezar', 'Medellín', 'Francia', 'Paris, Francia','30 grados', 'comedor' where not exists(select 2 from sites where id_site =2)");
         sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 3,2,'museo','Museo', 'Museo para ver cositas', 'Francia', 'Francia', 'Paris, Francia','20 grados', 'cine' where not exists(select 3 from sites where id_site =3)");
         sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 4,2,'notredame','Iglesia', 'Iglesia que se quemó', 'Francia', 'Francia', 'Paris, Francia','12 grados', 'teatro' where not exists(select 4 from sites where id_site =4)");
-        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 5,2,'opera','Opera', 'Opera', 'Francia', 'Francia', 'Paris, Francia','16 grados', 'estadio' where not exists(select 4 from sites where id_site =5)");
+        sql.execSQL("insert into sites(id_site,id_user,photo,name,info,description,punt, location,tempe, sitesR) select 5,2,'opera','Opera', 'La Ópera de París (en francés, Opéra national de Paris) es una institución musical de Francia, sucesora de la fundada en París por Luis XIV en 1669 con el nombre de Académie Royale de Musique.', 'Francia', 'Francia', 'Paris, Francia','16 grados', 'estadio' where not exists(select 4 from sites where id_site =5)");
         u = new User();
     }
 
@@ -121,7 +121,7 @@ public class DAOUser {
 
     public ArrayList<Sitio> verTodos(){
         listaSitios.clear();
-        Cursor cursor=sql.rawQuery("select * from sites", null);
+        Cursor cursor=sql.rawQuery("select * from sites ", null);
         if(cursor != null && cursor.getCount() >0) {
             cursor.moveToFirst();
             do{

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mostrardata"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MostrarDatos"
-    android:id="@+id/mostrardata">
+    android:background="@mipmap/back"
+    tools:context=".MostrarDatos">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -15,7 +16,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="foto" />
+        android:text="foto"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/nombre"
@@ -25,7 +28,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="nombre" />
+        android:text="nombre"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/descripcion"
@@ -35,7 +40,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="descripcion" />
+        android:text="descripcion"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/puntuacion"
@@ -45,7 +52,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="puntiacion" />
+        android:text="puntiacion"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/informacion"
@@ -55,7 +64,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="informacion" />
+        android:text="informacion"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/ubicacion"
@@ -65,7 +76,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="ubicacion" />
+        android:text="ubicacion"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/temperatura"
@@ -75,7 +88,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="temperatura" />
+        android:text="temperatura"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/recomendados"
@@ -85,7 +100,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="recomendados" />
+        android:text="recomendados"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>

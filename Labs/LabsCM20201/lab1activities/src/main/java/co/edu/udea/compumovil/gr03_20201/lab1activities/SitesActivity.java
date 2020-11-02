@@ -12,12 +12,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.Adaptador;
 import co.edu.udea.compumovil.gr03_20201.lab1activities.ui.login.Sitio;
 
 public class SitesActivity extends AppCompatActivity {
-    Button crear;
+    FloatingActionButton crear;
     DAOUser dao;
     Sitio s;
     Adaptador adapter;
@@ -28,6 +31,8 @@ public class SitesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sites);
         crear = findViewById(R.id.crear);
+
+        //Para las configuraciones
         crear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

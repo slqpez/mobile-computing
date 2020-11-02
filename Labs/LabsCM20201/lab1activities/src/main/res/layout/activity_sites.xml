@@ -8,29 +8,31 @@
     android:orientation="vertical"
     tools:context=".SitesActivity">
 
-    <Button
-        android:id="@+id/btn_insertar"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center"
-
-
-        android:background="@mipmap/descargar" />
-
     <ListView
         android:id="@+id/Sitios"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.13"></ListView>
 
-    <Button
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/crear"
-        android:layout_width="83dp"
+        android:layout_width="73dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="264dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="107dp"
-        android:background="@android:drawable/ic_menu_preferences"
-        android:backgroundTint="@color/design_default_color_error" />
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/cardview_light_background"
+        android:src="@android:drawable/ic_menu_manage" />
+
+    <Button
+        android:id="@+id/btn_insertar"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+
+        android:background="@android:drawable/ic_input_add"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTintMode="multiply" />
 
 </LinearLayout>

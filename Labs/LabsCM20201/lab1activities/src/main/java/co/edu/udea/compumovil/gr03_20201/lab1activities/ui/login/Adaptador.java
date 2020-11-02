@@ -83,7 +83,7 @@ public class Adaptador extends BaseAdapter {
 
         switch (s.getNombre()){
             case "torre":
-                foto.setImageResource(R.mipmap.torre);
+                foto.setImageResource(R.mipmap.ic_launcher_round);
                 break;
             case "museo":
                 foto.setImageResource(R.mipmap.museo);
