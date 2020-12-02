@@ -164,7 +164,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: new Text('Fitness 2020®'),
+        title: new Text('PullApp'),
         backgroundColor: Colors.green,
       ),
       drawer: new Drawer(

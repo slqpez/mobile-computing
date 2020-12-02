@@ -5,7 +5,7 @@ class Calculadora extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: new Text("Quienes somos"),
+        title: new Text("Calculador IMC"),
       ),
       body: new Center(
         child: new Text('implementar calculadora aqui'),
