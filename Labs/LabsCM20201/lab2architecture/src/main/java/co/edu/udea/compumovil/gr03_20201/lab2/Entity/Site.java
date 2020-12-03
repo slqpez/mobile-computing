@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.gr03_20201.lab2.entity;
+package co.edu.udea.compumovil.gr03_20201.lab2.Entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -6,9 +6,9 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "site_table")
 public class Site {
-    @ColumnInfo(name ="id")
+    @ColumnInfo(name ="SiteId")
     @PrimaryKey(autoGenerate = true)
-    private String id;
+    private String SiteId;
 
     @ColumnInfo(name ="photoURL")
     private String photoURL;
@@ -38,12 +38,12 @@ public class Site {
     public Site() {
     }
 
-    public String getId() {
-        return id;
+    public String getSiteId() {
+        return SiteId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSiteId(String SiteId) {
+        this.SiteId = SiteId;
     }
 
     public String getPhotoURL() {
