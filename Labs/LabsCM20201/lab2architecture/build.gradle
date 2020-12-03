@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "co.edu.udea.compumovil.gr03_20201.lab1"
+        applicationId "co.edu.udea.compumovil.gr03_20201.lab2"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
@@ -23,20 +23,13 @@ android {
 }
 
 dependencies {
-    def lifecycle_version = "1.1.1"
-    def room_version = "1.1.1"
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'androidx.appcompat:cardview:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.room:room-runtime:2.2.5'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
-    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
-
-    implementation "android.arch.presistence.room:runtime:$room_version"
-    annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
 
 }

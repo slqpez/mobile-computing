@@ -1,3 +1,4 @@
+include ':lab2architecture'
 include ':lab1'
 include ':lab1activities'
 include ':app'
