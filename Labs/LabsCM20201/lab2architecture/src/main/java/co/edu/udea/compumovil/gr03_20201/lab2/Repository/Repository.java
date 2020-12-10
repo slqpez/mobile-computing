@@ -16,13 +16,13 @@ import co.edu.udea.compumovil.gr03_20201.lab2.Entity.Site;
 public class Repository {
     private relationDao relationDao; //TODO
     private siteDao siteDao; //TODO
-    private LiveData<List<RelationUserSite>> allSites;  //TODO Hay que mirar qué tenemos que traer.
+    private LiveData<List<Site>> allSites;  //TODO Hay que mirar qué tenemos que traer.
 
     public Repository(Application application){
         DatabaseLab2  database = DatabaseLab2.getInstance(application);
         relationDao = database.relationDao(); //TODO
         siteDao = database.siteDao(); //TODO ojo, no sabemos cuál usar.
-        allSites = relationDao.getAllSites();
+        allSites = siteDao.getAllSites();
     }
 
     public void insert(Site site){
@@ -41,7 +41,7 @@ public class Repository {
         new DeleteAllSitesAsync(siteDao).execute();
     }
 
-    public  LiveData<List<RelationUserSite>> getAllSites(){
+    public  LiveData<List<Site>> getAllSites(){
         return allSites;
     }
 

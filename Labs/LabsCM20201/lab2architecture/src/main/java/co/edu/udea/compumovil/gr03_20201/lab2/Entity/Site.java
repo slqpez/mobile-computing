@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 public class Site {
     @ColumnInfo(name ="SiteId")
     @PrimaryKey(autoGenerate = true)
-    private String SiteId;
+    private int SiteId;
 
     @ColumnInfo(name ="photoURL")
     private String photoURL;
@@ -38,11 +38,11 @@ public class Site {
     public Site() {
     }
 
-    public String getSiteId() {
+    public int getSiteId() {
         return SiteId;
     }
 
-    public void setSiteId(String SiteId) {
+    public void setSiteId(int SiteId) {
         this.SiteId = SiteId;
     }
 
