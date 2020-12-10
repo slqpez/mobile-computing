@@ -3,6 +3,9 @@ import {SiteI} from "../../models/site.interface";
 import {SiteService} from "../../services/site.service";
 import {ActivatedRoute} from "@angular/router";
 import {NavController, LoadingController} from "@ionic/angular";
+import { environment } from 'src/environments/environment';
+import {AngularFireStorage} from '@angular/fire/storage';
+import {finalize} from 'rxjs/operators'
 
 @Component({
   selector: 'app-site-details',
@@ -10,6 +13,7 @@ import {NavController, LoadingController} from "@ionic/angular";
   styleUrls: ['./site-details.page.scss'],
 })
 export class SiteDetailsPage implements OnInit {
+
   
   site: SiteI= {
     photoURL: "",
@@ -19,8 +23,10 @@ export class SiteDetailsPage implements OnInit {
   };
   siteId =null;
 
+
+
   constructor(private route: ActivatedRoute, private nav:NavController,
-     private siteService:SiteService, private loadingController: LoadingController) { }
+     private siteService:SiteService, private loadingController: LoadingController, private storage: AngularFireStorage) { }
 
   ngOnInit() {
     this.siteId = this.route.snapshot.params["id"];
@@ -56,6 +62,7 @@ export class SiteDetailsPage implements OnInit {
         this.nav.navigateForward("/");
       })
     }
+    console.log(this.site.photoURL);
   }
 
   onRemove(idSite: string){
@@ -66,5 +73,20 @@ export class SiteDetailsPage implements OnInit {
     }
    
   }
+
+  async onUpload(e){
+    const id = Math.random().toString(36).substring(2);
+    const file = e.target.files[0];
+    const filePath =`images/${file.name}`;
+    const ref = await  this.storage.ref(filePath);
+    const task =  await this.storage.upload(filePath, file);
+    ref.getDownloadURL().subscribe((data)=>{
+      this.site.photoURL = data;
+      
+    })
+ 
+
+
+}
 
 }

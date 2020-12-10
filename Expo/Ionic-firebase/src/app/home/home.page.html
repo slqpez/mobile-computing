@@ -9,7 +9,7 @@
     <ion-card *ngFor="let site of sites">
       <ion-item lines="inset" button [routerLink]="['/details', site.id]">
         <ion-icon name="pin" slot="start"></ion-icon>
-        <ion-label> {{site.photoURL}} </ion-label> <br />
+        <ion-img src="{{site.photoURL}}"></ion-img>
         <ion-button fill="outline" slot="end">Editar</ion-button>
       </ion-item>
       <ion-card-content> {{site.name}} </ion-card-content>

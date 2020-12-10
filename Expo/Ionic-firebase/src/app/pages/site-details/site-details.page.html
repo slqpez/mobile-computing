@@ -7,6 +7,16 @@
 <ion-content>
   <ion-list lines="full">
     <ion-card>
+      <ion-item>
+        <h5>Select image</h5>
+        <ion-input
+          type="file"
+          accept="image/*"
+          (change)="onUpload($event)"
+          [(ngModel)]="site.photoURL"
+        ></ion-input>
+      </ion-item>
+
       <ion-item *ngIf="site">
         <ion-input
           required
